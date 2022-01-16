@@ -2,8 +2,7 @@
 describe('Comparison Exercises', () => {
     test.skip('using == should be equal to Jane', () => {
         /* Completa el test y modifica la function isJane */
-
-        expect(result).toEqual('Jane');
+        expect(isJane('Joel')).toEqual('Jane');
     });
 
     test.skip('using === should return 10', () => {

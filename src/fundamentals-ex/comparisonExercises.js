@@ -1,8 +1,8 @@
-export function isJane()
+export function isJane(name)
 {
     /* La function debe devolver Jane, obligatorio el uso del comparador == */
-    let name = 'Jane';
-
+    name.replace('Jane');
+    return name;
 }
 
 export function compareNumbers()
