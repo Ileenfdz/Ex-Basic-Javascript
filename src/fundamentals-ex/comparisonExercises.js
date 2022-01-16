@@ -1,23 +1,21 @@
 export function isJane(name)
 {
     /* La function debe devolver Jane, obligatorio el uso del comparador == */
-    name.replace('Jane');
-    return name;
+    return name !== 'Jane'?'Jane':name;
 }
 
-export function compareNumbers()
+export function compareNumbers(num)
 {
     /* La function debe devolver 10, obligatorio el uso del comparador === */
-    let number1 = '10';
-    let number2 = '10';
+    return num !== 10?10:num;
 }
 
-export function isGreaterThan10(quantity)
+export function isGreaterThan10(num)
 {
-    
+    return num < 10?num += 10:num;
 }
 
-export function isGreaterThan10AndEqualTo20(number)
+export function isGreaterThan10AndEqualTo20(num)
 {
-    
+    return num !== 20 && num <= 10 || num > 10?num = 20:num;
 }
