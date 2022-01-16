@@ -1,59 +1,53 @@
-
+import {checkVariable, checkIfIsNumber, checkIfIsInteger, checkIfNumberIsInfinite, sum, subtract, multiply, divide, checkIfNumbIsDivisibleByThree} from '../../src/fundamentals-ex/numberExercises'
 describe('Variables can be a number', () => {
-    test.skip('should be 1', () => {
+
+    test('should be 1', () => {
         /* Completa el test */
-
-        expect(number).toBe(1);
+        expect(checkVariable(3)).toBe(1);
     });
 
-    test.skip('should return "number"', () => {
-        /* Añade las líneas necesarias al test y modifica la function checkVariable*/
-        
-        expect(result).toBe("number");
+    test('should return "number"', () => {
+        /* Añade las líneas necesarias al test y modifica la function checkVariable*/      
+        expect(checkIfIsNumber(303.33)).toBe("number");
     });
 
-    test.skip('should return false if is not an integer', () => {
+    test('should return false if is not an integer', () => {
         /* Añade las líneas necesarias al test y Modifica la function checkIfIsInteger */
-
-        expect(result).toBe(false);
+        expect(checkIfIsInteger('Hello')).toBe(false);
     });
 
-    test.skip('should return "Number is Infinite"', () => {
+    test('should return "Number is Infinite"', () => {
         /* Añade las líneas necesarias al test y modifica la function checkIfNumberIsInfinite */
         
-        expect(result).toBe("Number is Infinite");
+        expect(checkIfNumberIsInfinite(5 * Infinity)).toBe("Number is Infinite");
     });
 
 });
 
 describe('Arithmetic operators', () => {
-    test.skip('should return 25', () => {
+    test('should return 25', () => {
         /* Añade las líneas necesarias al test / Modifica la function sum */
 
-        expect(result).toBe(25);
+        expect(sum(20)).toBe(25);
     });
 
-    test.skip('should return 30 after subtract', () => {
+    test('should return 30 after subtract', () => {
         /* Añade las líneas necesarias al test / Modifica la function subtract */
-
-        expect(result).toBe(30);
+        expect(subtract(50)).toBe(30);
     });
 
-    test.skip('should return 15 after multiply', () => {
+    test('should return 15 after multiply', () => {
         /* Añade las líneas necesarias al test / Modifica la function multiplication */
-        
-        expect(result).toBe(15);
+        expect( multiply(3)).toBe(15);
     });
 
-    test.skip('should return 25 after divide', () => {
+    test('should return 25 after divide', () => {
         /* Añade las líneas necesarias al test / Modifica la function divide */
-
-        expect(result).toBe(25);
+        expect(divide(50)).toBe(25);
     });
 
-    test.skip('should return 0 after use modulus operator', () => {
+    test('should return 0 after use modulus operator', () => {
         /* Añade las líneas necesarias al test / Modifica la function checkIfNumbIsDivisibleByThree */
-
-        expect(result).toBe('Number is divisible by 3');
+        expect(checkIfNumbIsDivisibleByThree(3)).toBe('Number is divisible by 3');
     });
 });

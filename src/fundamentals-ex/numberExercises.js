@@ -1,52 +1,56 @@
-export function checkVariable()
+export function checkVariable(num)
 {
-    let number = 15;
-    
+    return num !== 1?num =1:num;    
 }
 
-export function checkIfIsInteger()
+export function checkIfIsNumber(num)
 {
-    const number = 303.33;
-    
+    return typeof(num) === 'number'?"number":'not a number';
 }
 
-export function checkIfNumberIsInfinite()
+export function checkIfIsInteger(str)
 {
-    const number = 5 * Infinity ;
+    return typeof(str) === 'number'?true:false;
+}
+
+export function checkIfNumberIsInfinite(num)
+{
     /* Tendrás que utilizar un condicional / if ... */
-    
+    return num == Infinity ?"Number is Infinite":"Number is not Infinite";
 }
 
-export function sum()
+export function sum(num)
 {
     /* Completa la function utilizando el operador de suma + */
-    let numbOne = 20;
+    while (num < 25){
+        num ++;
+    }
+    return num;
 }
 
-export function subtract()
+export function subtract(num)
 {
     /* Completa la function utilizando el operador de sustracción - */
-    const numbOne = 55;
-    
+    while (num > 30){
+        num --;
+    }
+    return num;
 }
 
-export function multiply()
+export function multiply(num)
 {
     /* Completa la function utilizando el operador de sustracción - */
-    const numbOne = 3;
-
+    return num*5;
 }
 
-export function divide()
+export function divide(num)
 {
     /* Completa la function utilizando el operador de división / */
-    const numbOne = 50;
-
+    return num / 2;
 }
 
-export function checkIfNumbIsDivisibleByThree()
+export function checkIfNumbIsDivisibleByThree(num)
 {
     /* Completa la function utilizando el operador modulus y utiliza el conditional if() */
-    const numbOne = 3;
-    
+    return num % 3 == 0?'Number is divisible by 3':'Number is not divisible by 3';
 }
