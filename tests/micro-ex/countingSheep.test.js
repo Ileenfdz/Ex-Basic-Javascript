@@ -12,9 +12,7 @@ describe('Counting Sheep', () => {
             false, false, true,  true
         ]
 
-        let result = countSheeps(list);
-
-        expect(result).toEqual('There are 17 sheep in total');
+        expect(countSheeps(list)).toEqual('There are 17 sheep in total');
     });
 
     test('should have only wolfs', () => {
@@ -22,8 +20,6 @@ describe('Counting Sheep', () => {
             false, false, false
         ]
 
-        let result = countSheeps(list);
-
-        expect(result).toEqual('UPS!!! Wolfs eaten Sheeps');
+        expect(countSheeps(list)).toEqual('UPS!!! Wolfs eaten Sheeps');
     });
 });
